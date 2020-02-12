@@ -23,10 +23,14 @@ class AdventureManager {
   public async handleDebateRequest(sender: string, message: MsgSummary) {
     const channel = message.channel
     if (this.waitingRoom.includes(sender)) {
-      await sendAndLog(this.bot, channel, 'Hang tight. Let me find a few other friendly folks.')
+      await sendAndLog(this.bot, channel, 'Hang tight. Let me find some other friendly folks.')
     } else {
       if (this.isTooEarlyForUser(sender)) {
-        await sendAndLog(this.bot, channel, 'Sorry - you must wait 15 minutes from your last debate request.')
+        await sendAndLog(
+          this.bot,
+          channel,
+          'Sorry - you must wait 15 minutes from your last debate request. If the earth is even around then.',
+        )
       } else {
         this.waitingRoom.push(sender)
 
@@ -34,7 +38,7 @@ class AdventureManager {
           const party = arrayShuffleNew(this.waitingRoom)
           this.waitingRoom = []
           this.startGloriousDebate(party)
-          await sendAndLog(this.bot, channel, 'Oh, exciting. I have already found some debate partners.')
+          await sendAndLog(this.bot, channel, 'Oh, exciting. I have found debate partners for you.')
         } else {
           await sendAndLog(this.bot, channel, 'Ok, debate requested. Let me find a few other...feisty people to join you.')
         }
