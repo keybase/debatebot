@@ -21,6 +21,6 @@ If you'd like to write your _own_ Keybase bot, **debatebot** is a good starting 
 
 That should be it. You can then send your bot a message
 
-### the entry point of the code
+### Getting started on changing it
 
 take a look at `src/main.ts`. You can strip that down to the most basic bot if you like.
