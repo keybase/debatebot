@@ -10,7 +10,11 @@
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged": {},
+  "lint-staged": {
+    "*.ts": [
+      "eslint"
+    ]
+  },
   "scripts": {
     "go": "ts-node --transpile-only --files=. ./src/main.ts"
   },
