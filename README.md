@@ -1,10 +1,18 @@
 # debatebot
 
-[@debatebot](https://keybase.io/debatebot) on Keybase introduces strangers, for friendly discussions on controversial topics. This bot is written in TypeScript and serves as a basic example of bot writing for Keybase. It announces commands (`!debate`) in chat, and it replies to messages.
+[@debatebot](https://keybase.io/debatebot) on Keybase introduces strangers, for friendly discussions on controversial topics. This bot is written in TypeScript and serves as a basic example of bot-writing on Keybase. 
 
-If you'd like to write your own Keybase bot that replies to users and announces commands it can handle, this bot is a good starting point. You can fork it and make your own.
+It announces commands (`!debate`) in chat. For example:
 
-### To run this bot yourself.
+![advertised commands](https://github.com/keybase/debatebot/raw/master/images/advertised-commands.png)
+
+And the bot replies:
+
+![reply](https://github.com/keybase/debatebot/raw/master/images/reply.png)
+
+If you'd like to write your _own_ Keybase bot, **debatebot** is a good starting point. You can fork it.
+
+### To run it, or your edits of it:
 
 1. Clone this repo to your own computer.
 2. Run `yarn` (what I use) or `npm install` (more common) to install requirements
