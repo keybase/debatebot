@@ -16,7 +16,7 @@ class AdventureManager {
   private lastDebateRequest: Map<string, Date>
   public constructor(bot: Bot) {
     this.bot = bot
-    this.waitingRoom = ['enyoc2', 'enyoc3', 'cctester102', 'cctester101']
+    this.waitingRoom = []
     this.lastDebateRequest = new Map()
   }
 
